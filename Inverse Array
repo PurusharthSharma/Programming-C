@@ -1,0 +1,24 @@
+#include<stdio.h>
+#include<conio.h>
+ int main()
+ {
+  int arr[10000],n,i;
+  clrscr();
+	
+  printf("Enter The Size of the Array :")
+  scanf("%d",&n);
+
+  prinrf("Enter The Data in the Array :")
+  for(i=0;i<n;i++)
+  {
+   scanf("%d",&arr[i]);
+  }
+
+  printf("List in reverse order is as : ")
+  for(i=n-1;i>=0;i--)
+  {
+   printf("%d ",arr[i]);
+  }
+
+ getch();
+}
