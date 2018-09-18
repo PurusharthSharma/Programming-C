@@ -1,0 +1,25 @@
+#include<stdio.h>
+#include<conio.h>
+
+void main(){
+
+
+
+	int n1,n2,sum;
+
+	clrscr();
+
+	printf("Enter the First Number : ");
+	scanf("%d",&n1);
+
+	printf("Enter the Second Number");
+	scanf("%d",&n2);
+
+	sum=n1+n2;
+
+	printf("Sum is : %d",sum);
+
+
+	getch();
+
+}
