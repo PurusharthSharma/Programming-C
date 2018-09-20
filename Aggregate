@@ -1,0 +1,52 @@
+#include<stdio.h>
+#include<conio.h>
+
+void main(){
+
+	float grades,n1,n2,n3,n4,n5,total,agg;
+
+	clrscr();
+
+	printf("Enter The Marks of Subjects : ");
+	scanf("%f%f%f%f%f",&n1,&n2,&n3,&n4,&n5);
+
+	total=n1+n2+n3+n4+n5;
+
+	agg=(total/500)*100;
+
+	printf("Aggregate is : %f\n",agg);
+
+	if(agg>90){
+		printf("Grade A\n");
+		printf("1 Division");
+		}
+
+		else if(agg<=90 && agg>80){
+		printf("Grade B\n");
+		printf("1 Division");
+		}
+		else if(agg<=80 && agg>70){
+		printf("Grade C\n");
+		printf("1 Division");
+		}
+		else if(agg<=70 && agg>60){
+		printf("Grade D\n");
+		printf("1 Division");
+		}
+		else if(agg<=60 && agg>50){
+		printf("Grade E\n");
+		printf("2 Division");
+		}
+		else if(agg<=50 && agg>33){
+		printf("Grade F\n");
+		printf("3 Division");
+		}
+		else
+		printf("FAIL");
+
+
+
+
+	getch();
+
+}
