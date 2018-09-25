@@ -1,0 +1,35 @@
+// Program to calculate the sum of the elements of the Array		:)
+
+
+#include<stdio.h>
+#include<conio.h>
+
+
+void main(){
+
+
+	int num,sum=0,i,arr[10];
+
+	clrscr();
+
+	printf("Enter The Size of the Array : ");
+	scanf("%d",&num);
+
+
+
+	printf("Enter The Data in the array : ");
+	for(i=0;i<num;i++){
+		scanf("%d",&arr[i]);
+		sum=sum+arr[i];
+	}
+
+	printf("\n\nEntered array is : ");
+	for(i=0;i<num;i++)
+	 printf("%d ",arr[i]);
+
+	printf("\nSum of the Elements of the Array is : %d ",sum);
+
+
+	getch();
+
+}
