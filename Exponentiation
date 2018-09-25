@@ -1,0 +1,28 @@
+// Program to Calculate the Exponentiation of the Value   :)
+
+
+#include<stdio.h>
+#include<conio.h>
+#include<math.h>
+
+
+void main(){
+
+	float a,b,ans;
+
+	clrscr();
+
+	printf("Enter The Value : ");
+	scanf("%f",&a);
+
+	printf("Enter The Exponential Value : ");
+	scanf("%f",&b);
+
+	ans=pow(a,b);
+
+	printf("\n\n%f ^ %f = %f",a,b,ans);
+
+
+	getch();
+
+}
