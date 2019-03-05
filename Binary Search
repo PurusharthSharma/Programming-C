@@ -1,0 +1,63 @@
+/*    --    Program in c for Binary Search    --    */
+
+
+#include<stdio.h>
+#include<conio.h>
+
+void input(int arr[],int);
+void display(int arr[],int);
+void binarysearch(int arr[],int n,int item);
+
+void main(){
+
+  int arr[10],n,size,item;
+  
+  clrscr();
+  
+  printf("Enter the size of the list : ");
+  scanf("%d",&n);
+  input(arr,n);
+  display(arr,n);
+  printf("\nEnter the element to be searched : ");
+  scanf("%d",&item);
+  binarysearch(arr,n,item);
+  getch();
+  
+}
+
+void input(int arr[],int n){
+  int i;
+  for(i=0;i<n;i++){
+    printf("\nEnter element=");
+    scanf("%d",&arr[i]);
+  }
+}
+
+void display(int arr[],int n){
+  int i;
+  printf("\nThe array is=");
+  for(i=0;i<n;i++){
+    printf("\n%d",arr[i]);
+  }
+}
+
+void binarysearch(int arr[],int n,int item){
+  int lb,ub,mid,f=0;
+  lb=0;
+  ub=n-1;
+  mid=(lb+ub)/2;
+  while(lb<=ub&&f==0){
+    if(arr[mid]==item){
+      f=1;
+      printf("\nItem found at location=%d",mid);
+      break;
+    }
+    else if(arr[mid]<item)
+      lb=mid+1;
+    else
+      ub=mid-1;
+    mid=(lb+ub)/2;
+  }
+  if(f==0)
+  printf("\nElement not found");
+}
