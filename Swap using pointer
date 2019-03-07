@@ -1,0 +1,24 @@
+//      Swap Using Poiter
+
+
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+ int swap(int*,int*);
+ int a,b,c;
+ clrscr();
+ printf("\nEnter The Valueof a and b  :");
+ scanf("%d%d",&a,&b);
+ swap(&a,&b);
+ printf("\na=%d,\nb=%d",a,b);
+ getch();
+}
+int swap(int *a,int *b)
+{
+ int z;
+ z=*a;
+ *a=*b;
+ *b=z;
+ return(z);
+}
