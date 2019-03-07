@@ -1,0 +1,40 @@
+//                         SUM  OF  PRIME  NUMBERS
+
+
+#include<stdio.h>
+#include<conio.h>
+
+void main()
+{
+
+  int i,j,flag=0,num=100,count=3,sum=6;
+  clrscr();
+
+  while(count!=5)
+  {
+    for(i=4;i<num;i++)
+    {
+      for(j=2;j<i;j++)
+      {
+	if(i%j==0)
+	{
+	  flag=1;
+	  //break;
+	}
+      }
+      if(flag==0)
+      {
+	sum=sum+i;
+	count=count+1;
+	 printf("\nSum=%d ",sum);
+  printf("\n%d count = %d ",count);
+      }
+    }
+  }
+
+  printf("\nSum=%d ",sum);
+  printf("\n%d count = %d ",count);
+
+
+  getch();
+}
