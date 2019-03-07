@@ -1,0 +1,25 @@
+//        Sum of Two Numbers Using Pointers
+
+
+#include<stdio.h>
+#include<conio.h>
+
+void main(){
+
+  int s,a,b;
+  
+  clrscr();
+  
+  printf("\nPlease enter the valeu of \n a   AND   b \n");
+  scanf("%d%d",&a,&b);
+  s=sum(&a,&b);
+  printf("\nSum of a and b = %d",s);
+  
+getch();
+}
+
+int sum(int *a,int *b){
+  int s;
+  s=(*a)+(*b);
+  return s;
+}
