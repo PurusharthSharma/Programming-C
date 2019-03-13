@@ -1,0 +1,30 @@
+/*      A Program to Check Whether the String is Palindrome or not
+
+
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+ char a[100],r[100];
+ int i,j,len=0;
+ clrscr();
+ printf("\nEnter Any String to be Check Whether it is Palindrome or not  :");
+ scanf("%s",a);
+ for(i=0;a[i]!='\0';i++)
+ {
+  len++;
+ }
+ 
+ j=len-1;
+ for(i=0;i<len/2;i++)
+ {
+  if(a[i]!=a[j])
+  break;
+  j--;
+ }
+  if(i==j)
+   printf("\nPalindrome......");
+  else
+   printf("\nNot Palindrome String.......");
+  getch();
+}
