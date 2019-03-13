@@ -1,0 +1,29 @@
+/*      Program to find the Factotial       */
+
+
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+ int fact(int);
+ int n,f;
+ clrscr();
+ printf("\nEnter any number to find the factorial  :");
+ scanf("%d",&n);
+ f=fact(n);
+ printf("\nThe Factorial of the Entered Number is  :%d",f);
+ getch();
+}
+int fact(int n)
+{
+  int f;
+  if(n==1)
+   return(1);
+  else
+  {
+   f=n*fact(n-1);
+   return(f);
+  }
+}
+
+
