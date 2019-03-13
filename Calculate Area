@@ -1,0 +1,17 @@
+/*     Calculate are using #define method           */
+
+
+#include<stdio.h>
+#include<conio.h>
+
+#define Area(x)(3.14*x*x);
+
+void main(){
+  float r1=6.25,r2=2.5,ar;
+  clrscr();
+  ar=Area(r1);
+  printf("\nArea 1=%f",ar);
+  ar=Area(r2);
+  printf("\nArea 2=%f",ar);
+  getch();
+}
