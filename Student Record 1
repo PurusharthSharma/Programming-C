@@ -1,0 +1,39 @@
+/*        Program to store the name and roll no of a student in a structure and display the stored data     */
+
+
+#include<stdio.h>
+#include<conio.h>
+#include<string.h>
+
+typedef struct student_record{
+  char name[20];
+  int rollno;
+}student;
+
+void input(student *);
+void display(student *);
+
+void main(){
+  student *std,std1;
+  std=&std1;
+  clrscr();
+  printf("\nEnter the record");
+  input(std);
+  printf("\nThe record of student=");
+  display(std);
+  getch();
+}
+
+void input(student *std){
+  printf("\nEnter the name=");
+  fflush(stdin);
+  gets(std->name);
+  printf("\nEnter roll no.=");
+  scanf("%d",&std->rollno);
+}
+
+void display(student *std){
+  printf("\nThe name=%s",std->name);
+  printf("\nRoll no.=%d ",std->rollno);
+}
+
