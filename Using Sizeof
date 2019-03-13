@@ -1,0 +1,39 @@
+/*     Using the sizeof Opereator, in this program we have a structure of an employee havig differnt details.
+       First we Input the details of employee and than we display those details with the size of the structure used           */
+
+
+#include<stdio.h>
+#include<conio.h>
+#include<string.h>
+
+struct employee{
+  char name[20];
+  int id;
+  float salary;
+};
+
+void main(){
+
+  struct employee e;
+  
+  clrscr();
+  
+  printf("Enter employee name : ");
+  gets(e.name);
+  
+  printf("\nEnter ID : ");
+  scanf("%d",&e.id);
+
+  printf("\nEnter salary :");
+  scanf("%f",&e.salary);
+  
+  printf("\nName : %s",e.name);
+  printf("\nID : %d",e.id);
+  printf("\nSalary : %f",e.salary);
+  
+  printf("\nSize ofemployee structure : %d",sizeof(e));
+  
+  getch();
+  
+  
+}
