@@ -1,0 +1,26 @@
+/*    A Program to Get the value of Id and Password which the user will enter   */
+
+
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+ char pw[10],name[30],ch;
+ int i,n;
+ clrscr();
+ printf("\nPlease Enter Your User name /  id  :");
+ gets(name);
+ printf("\nEnter the length of your Password  :");
+ scanf("%d",&n);
+ printf("\nNow Enter Your Password  :");
+ for(i=0;i<n;i++)
+ {
+  ch=getch();
+  pw[i]=ch;
+  ch='*';
+  printf("%c",ch);
+ }
+ pw[i]='\0';
+ printf("\n\nEntered  User  name  is  : %s",name);
+ printf("\nEntered  Password  is  : %s",pw);
+}
