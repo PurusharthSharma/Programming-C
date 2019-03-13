@@ -1,0 +1,31 @@
+/*    A Program to get the ASCII Value of the Character   */
+
+
+#include<stdio.h>
+#include<conio.h>
+
+void main()
+
+{
+  int n,count ;
+  char string[20];
+
+  clrscr();
+
+  printf("\nEnter The BNo of Character to present in the array  :");
+  scanf("%d",&n);
+
+  printf("\nEntyer The String  :");
+  scanf("%s",string);
+
+  while(count<n)
+  {
+   printf("%c=%d\n",string[count],string[count]);
+   ++count;
+  }
+
+
+
+
+getch();
+}
