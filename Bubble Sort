@@ -1,0 +1,39 @@
+/*      Program to Implement Bubble Sort        */
+
+
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+ int a[100],i,n,j,flag=0,temp;
+ clrscr();
+ printf("\nEnter the size of the array  :");
+ scanf("%d",&n);
+ printf("\nEnter data to be inserted in the array  :");
+ for(i=0;i<n;i++)
+ {
+  scanf("%d",&a[i]);
+ }
+ while(i>0 && flag==0)
+ {
+  flag=1;
+  for(j=0;j<i;j++)
+  {
+   if(a[j]>a[j+1])
+   {
+    temp=a[j];
+    a[j]=a[j+1];
+    a[j+1]=temp;
+    flag=0;
+   }
+  }
+ }
+ printf("\nThe Sorted List is as Follows  :");
+ for(i=0;i<n;i++)
+ {
+  printf("%d  ",a[i]);
+ }
+
+
+ getch();
+}
