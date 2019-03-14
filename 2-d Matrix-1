@@ -1,0 +1,54 @@
+/*        A Program to Display 2-d Matrix      */
+
+
+
+#include<stdio.h>
+#include<conio.h>
+
+void input(int mat[5][5],int m,int n);
+void display(int mat[5][5],int m,int n);
+
+void main(){
+
+  int mat[4][3]={
+    {1,2,3},
+    {4,5,6},
+    {7,8,9},
+    {10,11,12}};
+    
+  int i,j;
+  
+  clrscr();
+  
+  for(i=0;i<4;i++){
+    for(j=0;j<3;j++){
+      printf("%d ",mat[i][j]);
+    }
+  printf("\n");
+  }
+
+  getch();
+}
+
+
+void input(int mat[5][5],int row,int col){
+  int i,j;
+  for(i=0;i<row;i++){
+    for(j=0;j<col;j++){
+      printf("\n%d %d ",i,j);
+      scanf("%d ",&mat[i][j]);
+     }
+  }
+}
+
+
+void display(int mat[5][5],int row,int col){
+  int i,j;
+  for(i=0;i<row;i++){
+    for(j=0;j<col;j++){
+      printf("%d",mat[i][j]);
+    }
+    printf("\n");
+  }
+}
+
