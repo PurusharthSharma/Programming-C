@@ -1,0 +1,28 @@
+/*       Program to Calculate Words and space in a sentence        */
+
+
+#include<stdio.h>
+#include<conio.h>
+
+void main(){
+  char str[20];
+  int i,word=1,space=0;
+  
+  clrscr();
+  
+  printf("Enter a string=");
+  gets(str);
+  
+  for(i=0;str[i]!='\0';i++)  {
+    if(str[i]==' ')  {
+      word++;
+     space++;
+    }
+  }
+  
+  printf("\nNumber of word : %d",word);
+  printf("\nNumber of space : %d",space);
+  
+getch();
+
+}
