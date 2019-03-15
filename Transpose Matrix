@@ -1,0 +1,57 @@
+/*       A Program for the Transpose of the Matrix        */
+
+
+#include<stdio.h>
+#include<conio.h>
+
+void input(int[5] [5],int,int);
+void display(int[5] [5],int,int);
+void transpose(int mat[5] [5],int row,int col);
+
+
+void main(){
+  int mat[5][5],row,col;
+  printf("enter the no of row and columns");
+  scanf("%d%d",&row,&col);
+  printf("Enter element");
+  input(mat,row,col);
+  printf("\n The matrix is : \n");
+  display(mat,row,col);
+  printf("The transpose of matrix is : \n");
+  transpose(mat,row,col);
+  getch();
+}
+
+
+void input(int mat[5] [5],int row,int col){
+    int i,j;
+    for(i=0;i<row;i++){
+      for(j=0;j<col;j++){
+         printf("Enter[%d][%d] Element : ",i,j);
+         scanf("%d",&mat[i][j]);
+      }
+    }
+}
+
+
+void display(int mat[5][5],int row,int col){
+  int i,j;
+  for(i=0;i<row;i++)  {
+    for(j=0;j<col;j++)  {
+      printf("%d ",mat[i] [j]);
+    }
+  printf("\n");
+  }
+}
+
+
+void transpose(int mat[5] [5],int row,int col){
+  int i,j;
+  for(i=0;i<col;i++){
+    for(j=0;j<row;j++){
+      printf("%d ",mat[j] [i]);
+    }
+  printf("\n");
+  }
+}
+
