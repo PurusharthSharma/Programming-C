@@ -1,0 +1,43 @@
+/*      A Program to get the address and value using Pointers      */
+
+
+
+#include<stdio.h>
+#include<conio.h>
+
+void main(){
+
+    int *ii,i;
+    float *ff,f;
+    char *cc,c;
+    
+    i=4;
+    f=5.6;
+    c='z';
+    ii=&i;
+    ff=&f;
+    cc=&c;
+    
+    clrscr();
+    
+    printf("Address of integer : %u",&i);
+    printf("\nAddress of integer : %u",ii);
+    
+    printf("\nValue of integer : %d",i);
+    printf("\nValue of integer : %d",*ii);
+    
+    printf("\nAddress of float : %u",&f);
+    printf("\nAddress of float : %u",ff);
+    
+    printf("\nValue of float : %d",f);
+    printf("\nValue of float : %d",*ff);
+    
+    printf("\nAddress of char : %u",&c);
+    printf("\nAddress of char : %u",cc);
+    
+    printf("\nValue of char : %d",c);
+    printf("\nValue of char : %d",*cc);
+    
+    getch();
+    
+}
