@@ -1,0 +1,25 @@
+/*      A Program for Array        */
+
+
+#include<stdio.h>
+#include<conio.h>
+
+void main(){
+
+  int a[10],i,n;
+  printf("Enter the size : ");
+  scanf("%d",&n);
+  
+  printf("\nEnter array element : ");
+  for(i=0;i<n;i++){
+    scanf("%d",&a[i]);
+  }
+  
+  printf("\nArray element are : ");
+  for(i=0;i<n;i++){
+    printf("%d ",a[i]);
+  }
+  
+  getch();
+
+}
