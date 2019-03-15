@@ -1,0 +1,63 @@
+/*        A Program for the sum of the elements of two arrays        */
+
+
+#include<stdio.h>
+#include<conio.h>
+
+void input(int[],int);
+void display(int[],int);
+void sum(int[],int[],int[],int);
+
+void main(){
+
+    int arr1[10],arr2[10],arr3[10];
+    int n;
+    
+    clrscr();
+    
+    printf("\nEnter the size of the two arrays : ");
+    scanf("%d",&n);
+    
+    printf("\nEnter element in first array : ");
+    input(arr1,n);
+    
+    printf("\nEnter element in second array : ");
+    input(arr2,n);
+    
+    printf("\nFirst array is ");
+    display(arr1,n);
+    
+    printf("\nSecond array is : ");
+    display(arr2,n);
+    
+    printf("\nArray after summing the elements is : ");
+    sum(arr1,arr2,arr3,n);
+    display(arr3,n);
+    
+    getch();
+    
+}
+
+
+void input(int arr[],int n){
+    int i;
+    for(i=0;i<n;i++){
+        scanf("%d",&arr[i]);
+    }
+}
+
+
+void display(int arr[],int n){
+    int i;    
+    for(i=0;i<n;i++){
+        printf("%d ",arr[i]);
+    }
+}
+
+
+void sum(int arr1[],int arr2[],int arr3[],int n){
+    int i;
+    for(i=0;i<n;i++)    {
+        arr3[i]=arr1[i]+arr2[i];
+    }
+}
