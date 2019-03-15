@@ -1,4 +1,4 @@
-/*       Program to Calculate Words and space in a sentence        */
+/*       Program to Calculate Total Number of Words and space in a sentence        */
 
 
 #include<stdio.h>
