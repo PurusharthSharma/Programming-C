@@ -1,0 +1,47 @@
+/*       A Program having the details of the person, displaying the details of the Person and using the sizeof operator     */
+
+
+#include<stdio.h>
+#include<conio.h>
+#include<string.h>
+
+struct person{
+  unsigned int gender:1;
+  unsigned int age:7;
+  unsigned int m_status:1;
+  char name[20];
+};
+
+void main(){
+
+  struct person p;
+  
+clrscr();
+
+  printf("\nGender 0 for female, 1 for male");
+  
+  printf("\nMarried status 0 for single, 1 for married");
+  
+  p.gender=1;
+  p.age=18;
+  p.m_status=0;
+  strcpy(p.name,"SAGAR");
+  
+  if(p.gender==1)
+    printf("\nPerson is male.");
+  else
+    printf("\nPerson is female.");
+    
+  printf("\nAge=%d",p.age);
+  if(p.m_status==1)
+    printf("\nPerson is married.");
+  else
+    printf("\nPerson is single.");
+    
+    printf("\nName=%s",p.name);
+    
+    printf("\nSize of operator=%d",sizeof(p));
+    
+    
+getch();
+}
