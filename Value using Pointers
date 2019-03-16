@@ -1,0 +1,26 @@
+#include<stdio.h>
+#include<conio.h>
+
+void main(){
+
+  int **k;
+  int *p;
+  int a=5;
+  p=&a;
+  k=&p;
+  
+  printf("\nValue of a=%u",a);
+  printf("\nValue of a=%u",*p);
+  printf("\nValue of a=%u",*(&a));
+  printf("\nValue of a=%u",**k);
+  
+  printf("\nAddress of a=%u",&a);
+  printf("\nAddress of a=%u",p);
+  printf("\nAddress of a=%u",*k);
+  printf("\nAddress of a=%u",&p);
+  printf("\nAddress of a=%u",k);
+  printf("\nAddress of a=%u",&k);
+  
+  getch();
+  
+}
