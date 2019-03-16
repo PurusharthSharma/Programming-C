@@ -1,3 +1,6 @@
+/*       A Program to get the values and address using pointers         */
+
+
 #include<stdio.h>
 #include<conio.h>
 
