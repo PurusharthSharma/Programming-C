@@ -1,0 +1,47 @@
+/*       A Program to reverse the Elements of the Array         */
+
+
+#include<stdio.h>
+#include<conio.h>
+
+void input(int arr[],int);
+void display(int arr[],int);
+void reverse(int arr[],int);
+
+void main(){
+  int arr[10],n;
+  printf("Enter the size : ");
+  scanf("%d",&n);
+  
+  input(arr,n);
+  display(arr,n);
+  reverse(arr,n);
+  
+  getch();
+}
+
+void input(int arr[],int n){
+  int i;
+  for(i=0;i<n;i++){    
+    scanf("%d",&arr[i]);
+  }
+}
+
+void display(int arr[],int n){
+  int i;
+  printf("\nThe array is : ");
+  for(i=0;i<n;i++){
+    printf("%d ",arr[i]);
+  }
+}
+
+void reverse(int arr[],int n){
+  int i;
+  printf("\nThe reverse of the array");
+  for(i=n-1;i>=0;i--){
+    printf("%d ",arr[i]);
+  }
+}
+
+
+
