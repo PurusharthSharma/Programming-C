@@ -1,0 +1,45 @@
+/*       A Program to Enter the Details of the Student and displaying the result in the Table Format         */
+
+
+#include<stdio.h>
+#include<conio.h>
+#include<string.h>
+
+struct student{
+  char name[20];
+  int rollno,s1,s2,tot;
+  float avg;
+}s[10];
+
+void main(){
+
+    int i,n;
+    
+    clrscr();
+    
+    printf("Enter the number of students : ");
+    scanf("%d",&n);
+    
+    for(i=0;i<n;i++){
+    
+      printf("Enter the roll number : ");
+      scanf("%d",&s[i].rollno);
+      printf("Enter the name : ");
+      scanf("%s",s[i].name);
+      
+      printf("Enter the marks in 2 subjects : ");
+      scanf("%d%d",&s[i].s1,&s[i].s2);
+      
+      s[i].tot=s[i].s1+s[i].s2;
+      s[i].avg=s[i].tot/2.0;
+      
+    }
+    
+    printf("\nRollno.\tName\tSub1\t Sub2\t Total\t Average\n\n");
+    for(i=0;i<n;i++){
+       printf("%d\t%s\t%d\t%d\t%d\t%.2f\n",s[i].rollno,s[i].name,s[i].s1,s[i].s2,s[i].tot,s[i].avg);
+    }
+    getch();
+    
+}
+
