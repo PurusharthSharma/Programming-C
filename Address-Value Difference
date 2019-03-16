@@ -1,0 +1,17 @@
+/*      A Program to get the Difference between the Value of the array and the address of the values of the array         */
+
+
+#include<stdio.h>
+#include<conio.h>
+
+void main(){
+
+  int arr[]={1,2,5,4,9};
+  int *i,*j;
+  i=&arr[1];
+  j=&arr[4];
+  printf("\nDifference between address : %d",(j-i));
+  printf("\nDifference between values : %d",(*j-*i));
+  
+  getch();
+}
