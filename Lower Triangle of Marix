@@ -1,63 +1,71 @@
+/*        A Program to get the lower triangle of the matrix            */
+
+
 #include<stdio.h>
 #include<conio.h>
+
 void input(int [4][4],int,int);
 void display(int [4][4],int,int);
 void lowtri(int mat[4][4],int row,int col);
-void main()
-{
-int mat[4][4],row,col,i,j;
-clrscr();
-printf("Enter the number of rows and columns=");
-scanf("%d%d",&row,&col);
-printf("\nEnter elements");
-input(mat,row,col);
-printf("\nThe matrix is=\n");
-display(mat,row,col);
-printf("\nLower triangle of matrix is=\n");
-lowtri(mat,row,col);
-getch();
+
+void main(){
+
+    int mat[4][4],row,col,i,j;
+    
+    clrscr();
+    
+    printf("Enter the number of rows and columns : ");
+    scanf("%d%d",&row,&col);
+    
+    printf("\nEnter elements : ");
+    input(mat,row,col);
+    
+    printf("\nThe matrix is : \n");
+    display(mat,row,col);
+    
+    printf("\nLower triangle of matrix is : \n");
+    lowtri(mat,row,col);
+    
+    getch();
+    
 }
-void input(int mat[4][4],int row,int col)
-{
-int i,j;
-for(i=0;i<row;i++)
-{
-for(j=0;j<col;j++)
-{
-printf("\nEnter [%d][%d] elements=",i,j);
-scanf("%d",&mat[i][j]);
+
+
+void input(int mat[4][4],int row,int col){
+    int i,j;
+    for(i=0;i<row;i++){
+      for(j=0;j<col;j++){
+          printf("\nEnter [%d][%d] element : ",i,j);
+          scanf("%d",&mat[i][j]);
+      }
+    }
 }
+
+
+void display(int mat[4][4],int row,int col){
+    int i,j;
+    for(i=0;i<row;i++){
+       for(j=0;j<col;j++){
+          printf("%d ",mat[i][j]);
+       }
+    printf("\n");
+    }
 }
-}
-void display(int mat[4][4],int row,int col)
-{
-int i,j;
-for(i=0;i<row;i++)
-{
-for(j=0;j<col;j++)
-{
-printf("%d ",mat[i][j]);
-}
-printf("\n");
-}
-}
-void lowtri(int mat[4][4],int row,int col)
-{
-int i,j;
-for(i=0;i<row;i++)
-{
-for(j=0;j<col;j++)
-{
-if(j<=i)
-{
-printf("%d\t",mat[i][j]);
-}
-else
-printf("");
-printf("\t");
-}
-printf("\n");
-}
+
+
+void lowtri(int mat[4][4],int row,int col){
+    int i,j;
+    for(i=0;i<row;i++){
+        for(j=0;j<col;j++){
+          if(j<=i){
+            printf("%d\t",mat[i][j]);
+          }
+        else
+          printf("");
+        printf("\t");
+        }
+    printf("\n");
+    }
 }
 
 
