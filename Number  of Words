@@ -1,0 +1,24 @@
+/*        A Program to find the NUmber of Words in the Sentence        */
+
+#include<stdio.h>
+#include<conio.h>
+
+void main(){
+
+    char str[20];
+    int i,word=1;
+    
+    clrscr();
+    
+    printf("Enter a string : ");
+    gets(str);
+    
+    for(i=0;str[i]!='\0';i++)    {
+      if(str[i]==' ')
+      word++;
+    }
+    
+    printf("\nNumber of word : %d",word);
+    
+    getch();
+}
