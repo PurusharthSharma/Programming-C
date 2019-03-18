@@ -1,0 +1,61 @@
+#include<stdio.h>
+#include<conio.h>
+void input(int[5][5],int,int);
+void display(int[5][5],int,int);
+void sub(int [5][5],int [5][5],int [5][5],int row,int col);
+void main()
+{
+int a[5][5],b[5][5],c[5][5],row,col;
+clrscr();
+printf("Enter the no of row and +columns=");
+scanf("%d%d",&row,&col);
+printf("\nEnter first matrix");
+input(a,row,col);
+printf("\nEnter second matrix");
+input(b,row,col);
+printf("\nThe first matrix=\n");
+display(a,row,col);
+printf("\nThe second matrix=\n");
+display(b,row,col);
+printf("\nAfter subtracting, the matrix is=\n");
+sub(a,b,c,row,col);
+display(c,row,col);
+getch();
+}
+void input(int mat[5] [5],int row,int col)
+{
+int i,j;
+for(i=0;i<row;i++)
+{
+for(j=0;j<col;j++)              
+
+{
+printf("\nEnter[%d][%d] element=",i,j);
+scanf("%d",&mat[i][j]);
+}
+}
+}
+void display(int mat[5][5],int row,int col)
+{
+int i,j;
+for(i=0;i<row;i++)
+{
+for(j=0;j<col;j++)
+{
+printf("%d",mat[i] [j]);
+}
+printf("\n");
+}
+}
+void sub(int a[5][5],int b[5][5],int c[5][5],int row,int col)
+{
+int i,j;
+for(i=0;i<row;i++)
+{
+for(j=0;j<col;j++)
+{
+c[i][j]=a[i][j]-b[i][j];
+}
+}
+}
+
