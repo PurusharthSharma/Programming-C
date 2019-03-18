@@ -1,0 +1,16 @@
+/*       Program which is using define method and we are using the if else to get the value of the define method         */
+
+#include<stdio.h>
+#include<conio.h>
+
+#define ARRANGE (a>20&&a<60)
+
+void main(){
+  int a=40;
+  clrscr();
+  if(ARRANGE)
+    printf("within range");
+  else
+    printf("out of range");
+  getch();
+}
