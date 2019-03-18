@@ -1,0 +1,31 @@
+/*       A Program to reverse the String          */
+
+
+#include<stdio.h>
+#include<conio.h>
+#include<string.h>
+
+void main(){
+
+    char str1[]="varanasi";
+    
+    int i,j=0,l;
+    char str2[20];
+    
+    l=strlen(str1);
+    
+    for(i=l-1;i>=0;i--)    {
+      str2[j]=str1[i];
+      j++;
+    }
+    for(i=0;i<=l-1;i++){
+      str1[i]=str2[i];
+    }
+    
+    str1[i
+    ]='\0';
+    printf("\nThe reverse string is : %s",str1);
+    
+    getch();
+    
+}
