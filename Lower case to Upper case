@@ -1,0 +1,26 @@
+/*        A Program to convert the lower case string to upper case string        */
+
+
+
+#include<stdio.h>
+#include<conio.h>
+
+void main(){
+
+  char str[20];
+  int i;
+  
+  clrscr();
+  
+  printf("Enter a string : ");
+  gets(str);
+  
+  for(i=0;str[i]!='\0';i++)  {
+    if(str[i]>=97&&str[i]<=122)
+    str[i]=str[i]-32;
+  }
+  
+  printf("\nString : %s",str);
+  
+  getch();
+}
