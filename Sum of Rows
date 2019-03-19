@@ -1,55 +1,64 @@
+/*         A Program to get the sum of the rows of the Matrix            */
+
+
 #include<stdio.h>
 #include<conio.h>
+
 void input(int mat[5][5],int m,int n);
 void display(int mat[5][5],int m,int n);
 void sum(int mat[5][5],int m,int n);
-void main()
-{
-int mat[5][5],row,col;
-clrscr();
-printf("Enter the no. of row and columns=");
-scanf("%d%d",&row,&col);
-printf("\nEnter elements=");
-input(mat,row,col);
-printf("\nThe matrix is=\n");
-display(mat,row,col);
-sum(mat,row,col);
-getch();
+
+void main(){
+
+        int mat[5][5],row,col;
+        
+        clrscr();
+        
+        printf("Enter the no. of row and columns : ");
+        scanf("%d%d",&row,&col);
+        
+        printf("\nEnter elements : ");
+        input(mat,row,col);
+        
+        printf("\nThe matrix is : \n");
+        display(mat,row,col);
+        sum(mat,row,col);
+        
+        getch();
+        
 }
-void input(int mat[5][5],int row,int col)
-{
-int i,j;
-for(i=0;i<row;i++)
-{
-for(j=0;j<col;j++)
-{
-printf("\nEnter[%d][%d] element=",i,j);
-scanf("%d",&mat[i][j]);
+
+
+void input(int mat[5][5],int row,int col){
+    int i,j;
+    for(i=0;i<row;i++){
+       for(j=0;j<col;j++){
+           printf("\nEnter[%d][%d] element : ",i,j);
+           scanf("%d ",&mat[i][j]);
+       }
+    }
+    
 }
+
+
+void display(int mat[5][5],int row,int col){
+    int i,j;
+    for(i=0;i<row;i++){
+      for(j=0;j<col;j++){
+          printf("%d ",mat[i][j]);
+      }
+    printf("\n");
+    }
 }
-}
-void display(int mat[5][5],int row,int col)
-{
-int i,j;
-for(i=0;i<row;i++)
-{
-for(j=0;j<col;j++)
-{
-printf("%d",mat[i][j]);
-}
-printf("\n");
-}
-}
-void sum(int mat[5][5],int row,int col)
-{
-int i,j,sum=0;
-for(i=0;i<row;i++)
-{
-sum=0;
-for(j=0;j<col;j++)
-{
-sum=sum+mat[i][j];
-}
-printf("Sum=%d\n",sum);
-}
+
+
+void sum(int mat[5][5],int row,int col){
+    int i,j,sum=0;
+    for(i=0;i<row;i++){
+      sum=0;
+      for(j=0;j<col;j++){
+        sum=sum+mat[i][j];
+      }
+      printf("Sum=%d\n",sum);
+    }
 }
