@@ -1,0 +1,37 @@
+#include<stdio.h>
+#include<conio.h>
+struct time
+{
+int hrs;
+int min;
+int sec;
+}t1,t2;
+void main()
+{
+clrscr();
+printf("\nEnter check-in time");
+printf("\nHH : ");
+scanf("%d",&t1.hrs);
+printf("\nMM : ");
+scanf("%d",&t1.min);
+printf("\nSS : ");
+scanf("%d",&t1.sec);
+printf("\nEnter check-out time");
+printf("\nHH : ");
+scanf("%d",&t2.hrs);
+printf("\nMM : ");
+scanf("%d",&t2.min);
+printf("\nSS : ");
+scanf("%d",&t2.sec);
+printf("\nThe checkin time=\n");
+printf("%d : %d : %d",t1.hrs,t1.min,t1.sec);
+printf("\nThe checkout time=\n");
+printf("%d : %d : %d",t2.hrs,t2.min,t2.sec);
+getch();
+}
+void floatlink()
+{
+float *ftr,f;
+ftr=&f;
+f=*ftr;
+}
