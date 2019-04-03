@@ -1,0 +1,24 @@
+/*           A Program to add and Subtract the value of the Address               */
+
+#include<stdio.h>
+#include<conio.h>
+
+void main(){
+
+    int *ptr;
+    
+    printf("\nAddress=%u",ptr);
+    
+    printf("\nAdding 1,Address=%u",ptr+1);
+    printf("\nAdding 2,Address=%u",ptr+2);
+    printf("\nAdding 3,Address=%u",ptr+3);
+    
+    printf("\nAddress=%u",ptr);
+    
+    printf("\nSubtracting 1,Address=%u",ptr-1);
+    printf("\nSubtracting 2,Address=%u",ptr-2);
+    printf("\nSubtracting 3,Address=%u",ptr-3);
+    
+    getch();
+    
+}
