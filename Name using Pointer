@@ -1,0 +1,23 @@
+/*            A Program to input the name using get and print that name using Pointer              */
+
+
+#include<stdio.h>
+#include<conio.h>
+
+void main(){
+
+  char name[20];
+  char *c;
+  
+  printf("Enter the name : ");
+  gets(name);
+  c=name;
+  
+  while(*c!='\0'){
+    printf("%c",*c);
+    c++;
+  }
+  
+  getch();
+  
+}
