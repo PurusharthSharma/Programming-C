@@ -1,0 +1,25 @@
+#include<stdio.h>
+#include<conio.h>
+#include<string.h>
+typedef struct college
+{
+char name[20];
+int code,pos;
+}college;
+void main()
+{
+college *c1,c2;
+c1=&c2;
+clrscr();
+printf("\nEnter college name=");
+scanf("%s",&c1->name);
+printf("\nEnter college code=");
+scanf("%d",&c1->code);
+printf("\nEnter the position of college=");
+scanf("%d",&c1->pos);
+printf("\nCollege name=%s",c1->name);
+printf("\nCollege code=%d",c1->code);
+printf("\nCollege position=%d",c1->pos);
+getch();
+}
+
