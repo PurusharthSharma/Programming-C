@@ -1,0 +1,20 @@
+/*       A Program to display a number if user enters negative number       */
+
+#include <stdio.h>
+#include <conio.h>
+
+int main(){
+    int number;
+
+    printf("Enter an integer : ");
+    scanf("%d", &number);
+
+    if (number < 0){
+        printf("You entered %d.\n", number);
+        printf("It is a Negative Number");
+    }
+
+    printf("You Entered Non Negative Number");
+
+    return 0;
+}
