@@ -1,0 +1,33 @@
+//        A Program to check for a number whether it is a spy number or not
+
+
+/*
+      A number is spy if the sum of it's digits equals the product of it's digits.
+*/
+
+
+#include<stdio.h>
+
+main()
+{
+ 
+ int n,div,digit,s=0,p=1;
+ printf("Enter a number: ");
+ scanf("%d",&n);
+ for(div=n;div>0;div=div/10)
+ {
+  digit = div%10;
+  s += digit;
+  p *= digit;
+ }
+ 
+ if(s == p)
+ {
+  printf("It is spy number");
+ }
+ else
+ {
+  printf("Not spy number");
+ }
+ return 0;
+}
