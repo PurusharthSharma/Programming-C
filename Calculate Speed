@@ -1,0 +1,17 @@
+//        A Program to calculate Speed
+
+
+#include<stdio.h>
+int main()
+{
+    int a, b, c, d;
+    char time, distance, speed;
+
+    printf("Enter Your distance ",a);
+    scanf("%d", &a);
+    printf("Enter Your time ",b);
+    scanf("%d", &b);
+
+    speed=distance/time;
+    printf("time is %d ",speed);
+}
