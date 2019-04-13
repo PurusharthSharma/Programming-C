@@ -1,0 +1,21 @@
+//        A Program to Calculate Volume of Cylinder
+
+
+#include <stdio.h>
+#include <conio.h>
+ 
+#define PI 3.14159
+ 
+int main(){
+    float radius, height, volume;
+    printf("Enter base radius and height of a Cylinder\n");
+    scanf("%f %f", &radius, &height);
+     
+    /* Volume of Cylinder = PI X Radius X Radius X Height */
+    volume = PI*radius*radius*height;
+ 
+    printf("Volume of Cylinder : %0.4f\n", volume);
+     
+    getch();
+    return 0;
+}
